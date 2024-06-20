@@ -6,7 +6,7 @@ import { nodePolyfills } from 'vite-plugin-node-polyfills';
 
 export default defineConfig(({ mode }) => {
   return {
-    base: '/MERN-petslove/',
+    base: '/MERN-PetsLove',
     // base: 'https://tzuhuangyen.github.io/MERN-petslove/',
     plugins: [react(), nodePolyfills()],
     // root: resolve(__dirname, './client'),
@@ -23,7 +23,7 @@ export default defineConfig(({ mode }) => {
       rollupOptions: {
         input: {
           // 相对于项目根目录的路径
-          main: path.resolve(__dirname, 'index.html'),
+          main: path.resolve(__dirname, 'main.jsx'),
         },
         output: {
           entryFileNames: ({ name }) => `assets/${name}.js`,
