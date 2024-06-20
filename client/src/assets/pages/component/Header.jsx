@@ -1,4 +1,4 @@
-import { backendUrl } from '../../../config.js';
+import { backendUrl } from '../../../../config.js';
 import React, { useEffect, useState, useContext } from 'react';
 import Logo from '../../../../public/images/Logo.png';
 import axios from 'axios';

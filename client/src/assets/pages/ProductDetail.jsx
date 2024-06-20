@@ -5,7 +5,7 @@ import { GrFavorite } from 'react-icons/gr';
 import { CiShoppingCart } from 'react-icons/ci';
 import ProductOtherDetailOther from '../pages/component/ProductOtherDetailOther';
 import CustomersAlsoViewed from '../pages/component/CustomersAlsoViewed';
-import { backendUrl } from '../../config.js';
+import { backendUrl } from '../../../config.js';
 import Loading from '../pages/component/Loading';
 
 function ProductDetail() {

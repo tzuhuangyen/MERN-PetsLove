@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'; // 导入 Link 组件
 import axios from 'axios';
 
-import { backendUrl } from '../../../config';
+import { backendUrl } from '../../../../config';
 import { CiShoppingCart } from 'react-icons/ci';
 
 import otherProduct1 from '../../../../public/images/otherProduct1.jpeg';

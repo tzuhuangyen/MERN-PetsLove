@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { Col } from 'react-bootstrap';
-import { backendUrl } from '../../config';
+import { backendUrl } from '../../../config';
 import DeleteAccount from '../pages/component/DeleteAccount';
 import { showUpdatePswAlert, showUpdatePswErrorAlert } from '../../swal';
 //change user's information, delete account, log out,

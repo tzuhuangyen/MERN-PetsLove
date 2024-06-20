@@ -1,7 +1,7 @@
 import React, { createContext } from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { backendUrl } from '../../../config.js';
+import { backendUrl } from '../../../../config';
 
 export const ShopContext = createContext(null);
 

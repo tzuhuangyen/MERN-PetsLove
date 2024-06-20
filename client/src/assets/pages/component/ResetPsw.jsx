@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-import { backendUrl } from '../../../config.js';
+import { backendUrl } from '../../../../config.js';
 
 const ResetPsw = () => {
   const [password, setPassword] = useState('');

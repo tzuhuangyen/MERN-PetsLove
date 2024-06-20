@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 import axios from 'axios';
-import { backendUrl } from '../../../config';
+import { backendUrl } from '../../../../config';
 
 const ForgotPsw = () => {
   const [email, setEmail] = useState('');

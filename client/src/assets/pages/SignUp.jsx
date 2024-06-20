@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-import { backendUrl } from '../../config.js';
+import { backendUrl } from '../../../config.js';
 console.log('Backend URL:', backendUrl);
 import { showSignUpAlert, showSignUpErrorAlert } from '../../swal.js';
 

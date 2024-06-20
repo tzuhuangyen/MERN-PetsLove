@@ -35,7 +35,7 @@ import {
   FaTimes,
 } from 'react-icons/fa';
 
-import { backendUrl } from '../../config';
+import { backendUrl } from '../../../config.js';
 import { useProgress } from './Context/ProgressContext';
 import Confetti from 'react-confetti';
 import { useCart } from './Context/CartContext.jsx';

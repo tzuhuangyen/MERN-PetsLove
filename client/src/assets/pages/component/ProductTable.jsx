@@ -4,7 +4,7 @@ import { Table, Button } from 'react-bootstrap';
 import { TiEdit } from 'react-icons/ti';
 import { MdDeleteForever } from 'react-icons/md';
 
-import { backendUrl } from '../../../config.js';
+import { backendUrl } from '../../../../config';
 function ProductTable({ allImage }) {
   //handleEditProduct
   // const handleEditProduct = async (productId) => {

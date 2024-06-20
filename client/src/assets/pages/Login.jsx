@@ -1,4 +1,4 @@
-import { backendUrl } from '../../config.js';
+import { backendUrl } from '../../../config.js';
 import { AuthContext } from '../pages/Context/AuthContext';
 import { CartContext } from '../pages/Context/CartContext';
 import axios from 'axios';

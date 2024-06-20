@@ -1,4 +1,4 @@
-import { backendUrl } from '../../config.js';
+import { backendUrl } from '../../../config.js';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Container, Row, Col, Form, Button, Table } from 'react-bootstrap';

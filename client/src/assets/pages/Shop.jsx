@@ -1,4 +1,4 @@
-import { backendUrl } from '../../config.js';
+import { backendUrl } from '../../../config.js';
 console.log('Backend URL:', backendUrl); // 確認 backendUrl 正確
 import axios from 'axios';
 import React from 'react';
@@ -87,6 +87,9 @@ const Shop = () => {
   }, []);
   //component create products card
   const ProductCard = ({ productTypes }) => {
+    if (!Array.isArray(productTypes)) {
+      return <p>No products found.</p>; // 或者其他處理方式
+    }
     return (
       <>
         {' '}

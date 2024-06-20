@@ -1,4 +1,4 @@
-import { backendUrl } from '../../../config';
+import { backendUrl } from '../../../../config';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import { ListGroup } from 'react-bootstrap';
