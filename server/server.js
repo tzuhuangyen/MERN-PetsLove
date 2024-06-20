@@ -1,6 +1,7 @@
-const dotenv = require('dotenv');
 require('dotenv').config();
+const dotenv = require('dotenv');
 dotenv.config({ path: './config.env' });
+
 console.log(process.env.MONGODB_CONNECT_URL);
 const express = require('express');
 const app = express();
@@ -78,7 +79,7 @@ process.on('unhandleRejection', (err, promise) => {
   console.error('uncaught Rejection!', promise, 'reason', err);
 });
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Yen's Server Started at Server is running on ${PORT}`);
 });

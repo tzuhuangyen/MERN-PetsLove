@@ -8,7 +8,7 @@ const validator = require('validator');
 const dotenv = require('dotenv');
 require('dotenv').config();
 const frontendUrl = process.env.FRONTEND_URL;
-// console.log('JWT Secret:', process.env.JWT_SECRET_KEY);
+// console.log('JWT_SECRET_KEY:', process.env.JWT_SECRET_KEY);
 // console.log('JWT Expiry:', process.env.JWT_EXPIRED_DAY);
 
 //處理全域catch
