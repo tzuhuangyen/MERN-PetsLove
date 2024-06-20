@@ -2,6 +2,9 @@ import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import path from 'path';
 import { nodePolyfills } from 'vite-plugin-node-polyfills';
+// 加載 .env 文件中的環境變數
+import dotenv from 'dotenv';
+dotenv.config();
 
 export default defineConfig(({ mode }) => {
   return {
