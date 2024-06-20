@@ -1,21 +1,13 @@
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
-import { resolve } from 'path'; // 引入 resolve 方法
 import path from 'path';
 import { nodePolyfills } from 'vite-plugin-node-polyfills';
 
 export default defineConfig(({ mode }) => {
   return {
-    base: '/MERN-PetsLove',
+    base: '/MERN-PetsLove/',
     // base: 'https://tzuhuangyen.github.io/MERN-petslove/',
     plugins: [react(), nodePolyfills()],
-    // root: resolve(__dirname, './client'),
-
-    // resolve: {
-    //   alias: {
-    //     '/images': path.resolve(__dirname, 'public/images'),
-    //   },
-    // },
     build: {
       outDir: 'dist',
       emptyOutDir: false, // 设置为 false，防止构建时清空输出目录
@@ -32,7 +24,7 @@ export default defineConfig(({ mode }) => {
         },
       },
       // 指定 HTML 模板文件的路径
-      template: path.resolve(__dirname, 'client/index.html'),
+      // template: path.resolve(__dirname, 'client/index.html'),
     },
   };
 });
