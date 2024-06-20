@@ -22,7 +22,7 @@ dist-ssr
 
 # Other custom ignores
 .text
-
+.DS_Store
 
 # Environment files
 
