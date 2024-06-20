@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
 require('dotenv').config({ path: '../config.env' });
-console.log('JWT_Secret Key:', process.env.JWT_SECRET_KEY);
+
 const UserModel = require('../models/usersModel');
 const appError = require('./appError');
 const handleErrorAsync = require('./handleErrorAsync');

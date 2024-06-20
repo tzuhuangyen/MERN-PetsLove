@@ -2,7 +2,6 @@ require('dotenv').config();
 const dotenv = require('dotenv');
 dotenv.config({ path: './config.env' });
 
-console.log(process.env.MONGODB_CONNECT_URL);
 const express = require('express');
 const app = express();
 const path = require('path');
