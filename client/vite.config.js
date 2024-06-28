@@ -1,6 +1,7 @@
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import path from 'path';
+
 import { nodePolyfills } from 'vite-plugin-node-polyfills';
 // 加載 .env 文件中的環境變數
 import dotenv from 'dotenv';
@@ -18,7 +19,7 @@ export default defineConfig(({ mode }) => {
       rollupOptions: {
         input: {
           // 相对于项目根目录的路径
-          main: path.resolve(__dirname, 'main.jsx'),
+          main: path.resolve(__dirname, 'index.html'),
         },
         output: {
           entryFileNames: ({ name }) => `assets/${name}.js`,

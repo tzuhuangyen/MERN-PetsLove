@@ -21,6 +21,7 @@ export const AuthProvider = ({ children }) => {
     }
     console.log('Authentication state changed: ', authState.isAuthenticated);
   }, [authState.isAuthenticated]);
+
   const login = (user) => {
     localStorage.setItem('token', user.token);
     setAuthState({ isAuthenticated: true, user });
