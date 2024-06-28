@@ -32,8 +32,10 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 app.use(express.json());
-const imagesPath = path.join(__dirname, '..', 'client', 'public', 'Images');
-console.log(imagesPath);
+const imagesPath = path.join(__dirname, '../client/public/images');
+console.log(`__dirname: ${__dirname}`);
+console.log(`Resolved images path: ${imagesPath}`);
+
 // express.static('public/Images')
 app.use('/adminProducts', express.static('public/Images'));
 app.use((req, res, next) => {

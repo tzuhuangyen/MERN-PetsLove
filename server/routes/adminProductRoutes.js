@@ -12,9 +12,10 @@ const handleErrorAsync = require('../service/handleErrorAsync');
 // 设置静态文件夹来提供图片
 router.use(
   '/adminProducts',
-  express.static(path.join(__dirname, '..', 'public', 'Images'))
+  express.static(path.join(__dirname, '../client/public/images'))
 );
-
+// (__dirname, '..', 'public', 'images')
+// __dirname, '..', 'client', 'public', 'images')
 // router.use(
 //   '/admin/products',
 //   express.static(path.join(__dirname, '..', 'public', 'Images'))

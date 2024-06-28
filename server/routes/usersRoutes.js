@@ -8,6 +8,7 @@ const validator = require('validator');
 const dotenv = require('dotenv');
 require('dotenv').config();
 const frontendUrl = process.env.FRONTEND_URL;
+console.log('FRONTEND_URL:', frontendUrl);
 // console.log('JWT_SECRET_KEY:', process.env.JWT_SECRET_KEY);
 // console.log('JWT Expiry:', process.env.JWT_EXPIRED_DAY);
 
