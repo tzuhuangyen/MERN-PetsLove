@@ -27,6 +27,11 @@ export default defineConfig(({ mode }) => {
           assetFileNames: `assets/[name].[ext]`,
         },
       },
+      resolve: {
+        alias: {
+          '@': path.resolve(__dirname, './src'), // Set your alias here
+        },
+      },
       // 指定 HTML 模板文件的路径
       // template: path.resolve(__dirname, 'client/index.html'),
     },
