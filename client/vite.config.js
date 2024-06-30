@@ -18,8 +18,7 @@ export default defineConfig(({ mode }) => {
       assetsDir: '.', // 将资源文件输出到名为 assets 的子目录中
       rollupOptions: {
         input: {
-          // 相对于项目根目录的路径
-          main: path.resolve(__dirname, 'index.html'),
+          client: 'index.html', // Entry point for client-side code
         },
         output: {
           entryFileNames: ({ name }) => `assets/${name}.js`,
